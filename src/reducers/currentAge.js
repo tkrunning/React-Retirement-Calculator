@@ -1,19 +1,21 @@
-
 /* ------------   INITIAL STATE     ------------------ */
-const initialState = '26'
+const initialState = "25";
 
 /* -----------------    ACTION TYPES     ------------------ */
-const ADD_CURRENT_AGE = 'ADD_CURRENT_AGE';
+const ADD_CURRENT_AGE = "ADD_CURRENT_AGE";
 
 /* ------------  SYNC ACTION CREATORS     ------------------ */
-export const addCurrentAge = currentAge => ({ type: ADD_CURRENT_AGE, currentAge });
+export const addCurrentAge = currentAge => ({
+  type: ADD_CURRENT_AGE,
+  currentAge
+});
 
 /* ------------       REDUCER    ------------------ */
-export default ( state = initialState, action ) => {
-  switch( action.type ) {
+export default (state = initialState, action) => {
+  switch (action.type) {
     case ADD_CURRENT_AGE:
-      return action.currentAge
+      return action.currentAge;
     default:
-      return state
+      return state;
   }
-}
+};
