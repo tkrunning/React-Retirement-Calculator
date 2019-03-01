@@ -1,28 +1,22 @@
-import React from 'react'
-import { Footer } from 'react-materialize'
+import React from "react";
+import { Footer } from "react-materialize";
 
 const Foot = props => (
   <Footer
-    copyrights="&copy; 2017 Gabriel Rowe"
-    style={{ backgroundColor: "#2266bb" }}
+    copyrights="&copy; 2019 Nomad Gate"
+    style={{ backgroundColor: "#000" }}
     links={
-      <ul>
-        <p className="white-text"> More from me! </p>
-        <a href="http://linkedin.com/in/gabrielrowe">
-          <i alt="LinkedIn Logo" className="fa fa-linkedin-square fa-2x icon" aria-hidden="true" ></i>
-        </a>
-        <a href="https://github.com/gabrielwr">
-          <i alt="GitHub Logo" className="fa fa-github fa-2x space-button icon" aria-hidden="true" ></i>
-        </a>
-        <a href="https://gabrielwr.github.io/">
-          <i alt="Portfolio Site" className="fa fa-file-pdf-o fa-2x space-button icon" aria-hidden="true" ></i>
-        </a>
-      </ul>
+      <p>
+        Visit <a href="https://nomadgate.com">Nomad Gate</a>
+      </p>
     }
   >
-      <h5 className="white-text">Hey!</h5>
-      <p className="white-text">Thanks so much for coming to check this out.</p>
-      <p className="white-text">It's a fun little side project that is still very much a work in progress!</p>
+    <p className="white-text">
+      Forked from{" "}
+      <a href="https://github.com/gabrielwr/React-Retirement-Calculator">
+        Gabriel Rowe
+      </a>
+    </p>
   </Footer>
 );
 
